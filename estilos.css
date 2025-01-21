@@ -1,237 +1,260 @@
-div{
-font-size:16px;
-color: black;
-
+div {
+  font-size: 16px;
+  color: black;
+}
+/*index inicia*/
+/*navbar inicia*/
+.navbar {
+  background-color: rgb(37, 2, 69);
 }
 
-h1{
-    font-size: 100px;
-    color: rgb(61, 5, 113);
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+.navbar-brand img {
+  width: 80% !important;
+  height: auto !important;
+  max-width: 150%;
 }
 
-h2{
-
-    font-size: 24px;
-    color: rgb(61, 5, 113);
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+@media only screen and (min-width: 480px) {
+  .navbar-brand img {
+    width: 15%;
+    height: auto;
+  }
 }
 
-/*menu*/
-.menu{
-    font-size:16px;
-    color: rgb(78, 4, 78);
-    text-align: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-
+@media only screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 20%;
+    height: auto;
+  }
 }
 
-.contenedorMenu {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    align-items: center; 
-    background-color: white; 
-    padding: 20px; 
-    border: 1px solid #060505; 
-    border-radius: 10px; 
-    max-width: 600px; 
-    margin-left: auto;
-    margin-right: 20px; 
+.nav-link {
+  color: white;
+}
+/*navbar finaliza*/
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Imagenes/Fondo_Index.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.titulo{
-    font-size: 24px;
-    color: rgb(61, 5, 113);
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: rgb(61, 5, 113);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.body_index{
-    margin: 0;
-    padding: 0;
-    background-image: url('../PreEntrega_1_JuanMorales/Imagenes/Fondo_Index.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+.img_h1 {
+  font-size: 60px;
+  margin: 0;
 }
 
-/*nosotros*/
-.nosotros{
-    font-size: 24px;
-    color: rgb(61, 5, 113);
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+.img_h2 {
+  font-size: 40px;
+  margin: 0;
 }
 
-#body_nosotros{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(151, 150, 150);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+@media only screen and (min-width: 480px) {
+  .img_h1 {
+    font-size: 30px;
+  }
+  .img_h2 {
+    font-size: 20px;
+  }
 }
 
-/*valores*/
+@media only screen and (min-width: 768px) {
+  .img_h1 {
+    font-size: 60px;
+  }
+  .img_h2 {
+    font-size: 40px;
+  }
+}
 
-.circulo{
-    font-size:16px;
-    color: black;
-    display: flex;
-    gap: 20px;
+@media only screen and (min-width: 1024px) {
+  .img_h1 {
+    font-size: 90px;
+  }
+  .img_h2 {
+    font-size: 50px;
+  }
+}
+
+/*termina index*/
+
+h1 {
+  font-size: 100px;
+  color: rgb(61, 5, 113);
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo {
+  font-size: 50px;
+  color: rgb(61, 5, 113);
+  font-weight: bold;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*nosotros inicia*/
+.nosotros {
+  text-align: justify;
+  padding: 20%;
+  font-size: 24px;
+  color: rgb(61, 5, 113);
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#body_nosotros {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(151, 150, 150);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*nosotros termina*/
+
+/*valores inicia*/
+
+.valores {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  display: grid;
+  background-color: rgb(161, 160, 160);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 200px);
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 320px) {
+  .valores {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+}
+
+#ambicion {
+  grid-column: 1/3;
+}
+
+@media only screen and (min-width: 768px) {
+  .valores {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  #trabajoEnEquipo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #flexibilidad {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  #ambicion {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .valores {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 200px);
+  }
+
+  #flexibilidad {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #ambicion {
+    grid-column: 3/5;
+    grid-row: 2/2;
+  }
+}
+
+.circulo {
+  background-color: gray;
+  border: 3px solid black;
+}
+
+#trabajoEnEquipo {
+  background-color: aquamarine;
+}
+
+#flexibilidad {
+  background-color: rgb(143, 5, 143);
+}
+
+#transparencia {
+  background-color: rgb(36, 161, 228);
+  text-align: center;
+}
+
+#respeto {
+  background-color: rgb(243, 123, 129);
+}
+
+#humildad {
+  background-color: rgb(239, 193, 93);
+}
+
+#innovacion {
+  background-color: rgb(161, 235, 132);
+}
+
+#ambicion {
+  background-color: rgb(151, 132, 235);
+}
+
+/*valores termina*/
+
+/*inicia servicios*/
+
+.servicios {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+  .card{
+    width: 100%;
+    height: auto;
+    background-color: rgb(222, 205, 238);
     justify-content: center;
+    text-align: center;
     align-items: center;
-    flex-wrap: wrap;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-transform: uppercase ;
+  }
+
+/*termina servicios*/
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  padding: 20px;
+  background-color: rgb(37, 2, 69);
 }
-
-#trabajoEnEquipo{
-width: 150px;
-height: 150px;
-background-color: aquamarine;
-line-height: 100px;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: bold;
-font-size: calc(0.2 * 60px);
-text-align: center;
-overflow: hidden;
-white-space: normal;
-
-}
-
-#flexibilidad{
-    width: 150px;
-    height: 150px;
-    background-color: rgb(143, 5, 143);
-    line-height: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: calc(0.2 * 60px);
-    text-align: center;
-    overflow: hidden;
-    white-space: normal;
-    
-    }
-
-#transparencia{
-    width: 150px;
-    height: 150px;
-    background-color: rgb(36, 161, 228);
-    line-height: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: calc(0.2 * 60px);
-    text-align: center;
-    overflow: hidden;
-    white-space: normal;
-    }
-
-#respeto{
-    width: 150px;
-    height: 150px;
-    background-color: rgb(243, 123, 129);
-    line-height: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: calc(0.2 * 60px);
-    text-align: center;
-    overflow: hidden;
-    white-space: normal;
-    }
-
-#humildad{
-    width: 150px;
-    height: 150px;
-    background-color: rgb(239, 193, 93);
-    line-height: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: calc(0.2 * 60px);
-    text-align: center;
-    overflow: hidden;
-    white-space: normal;
-    }
-
-#innovacion{
-    width: 150px;
-    height: 150px;
-    background-color: rgb(161, 235, 132);
-    line-height: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: calc(0.2 * 60px);
-    text-align: center;
-    overflow: hidden;
-    white-space: normal;
-    }
-
-#ambicion{
-    width: 150px;
-    height: 150px;
-    background-color: rgb(151, 132, 235);
-    line-height: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: calc(0.2 * 60px);
-    text-align: center;
-    overflow: hidden;
-    white-space: normal;
-    }
-
-    /*valores*/
-
-    .servicios{
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cuadro{
-        width: 150px;
-        height: 150px;
-        background-color: rgb(255, 253, 250);
-        color: black;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        font-size: 16px;
-        border: 1px solid rgb(106, 7, 106);
-        border-radius: 5px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-
