@@ -1,0 +1,272 @@
+$color: rgb(61, 5, 113);
+$color2:  rgb(151, 150, 150);
+
+div {
+    font-size: 16px;
+    color: black;
+  }
+  /*index inicia*/
+  /*navbar inicia*/
+
+  .navbar {
+    background-color: rgb(37, 2, 69);
+  }
+  
+  .navbar-brand img {
+    width: 100%;
+    max-width: 150px; 
+    height: auto;
+  }
+  
+  
+  @media (max-width: 480px) {
+    .navbar-brand img {
+      width: 80px; 
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .navbar-brand img {
+      width: 120px; 
+    }
+  }
+  
+
+  @media (min-width: 769px) {
+    .navbar-brand img {
+      width: 150px; 
+    }
+  }
+  
+  .nav-link {
+    color: white;
+  }
+  /*navbar finaliza*/
+  
+  .main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./Imagenes/Fondo_Index.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: $color;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .img_h1 {
+    font-size: 60px;
+    margin: 0;
+  }
+  
+  .img_h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  @media only screen and (min-width: 480px) {
+    .img_h1 {
+      font-size: 30px;
+    }
+    .img_h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .img_h1 {
+      font-size: 60px;
+    }
+    .img_h2 {
+      font-size: 40px;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .img_h1 {
+      font-size: 90px;
+    }
+    .img_h2 {
+      font-size: 50px;
+    }
+  }
+  
+  /*termina index*/
+  
+  h1 {
+    font-size: 100px;
+    color:$color;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .titulo {
+    font-size: 50px;
+    color: $color;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /*nosotros inicia*/
+  .nosotros {
+    text-align: justify;
+    padding: 20%;
+    font-size: 24px;
+    color: $color;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  #body_nosotros {
+    margin: 0;
+    padding: 0;
+    background-color: $color2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /*nosotros termina*/
+  
+  /*valores inicia*/
+  
+  .valores {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    display: grid;
+    background-color: $color2;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 200px);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+  
+  @media only screen and (min-width: 320px) {
+    .valores {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 200px);
+    }
+  }
+  
+  #ambicion {
+    grid-column: 1/3;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .valores {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, 200px);
+    }
+  
+    #trabajoEnEquipo {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  
+    #flexibilidad {
+      grid-column: 2/4;
+      grid-row: 1/2;
+    }
+    #ambicion {
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .valores {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(2, 200px);
+    }
+  
+    #flexibilidad {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    #ambicion {
+      grid-column: 3/5;
+      grid-row: 2/2;
+    }
+  }
+  
+  .circulo {
+    background-color: gray;
+    border: 3px solid black;
+  }
+  
+  #trabajoEnEquipo {
+    background-color: aquamarine;
+  }
+  
+  #flexibilidad {
+    background-color: $color;
+  }
+  
+  #transparencia {
+    background-color: rgb(36, 161, 228);
+    text-align: center;
+  }
+  
+  #respeto {
+    background-color: rgb(243, 123, 129);
+  }
+  
+  #humildad {
+    background-color: rgb(239, 193, 93);
+  }
+  
+  #innovacion {
+    background-color: rgb(161, 235, 132);
+  }
+  
+  #ambicion {
+    background-color: rgb(151, 132, 235);
+  }
+  
+  /*valores termina*/
+  
+  /*inicia servicios*/
+  
+  .servicios {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    .card{
+      width: 100%;
+      height: auto;
+      background-color: rgb(222, 205, 238);
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  
+  /*termina servicios*/
+  
+  footer {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    padding: 20px;
+    background-color: rgb(37, 2, 69);
+  }
+  
