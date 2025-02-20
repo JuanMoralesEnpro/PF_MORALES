@@ -9,52 +9,76 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Euphoria+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./estilos.css" />
     <title>Gestion De Negocios</title>
   </head>
   <body class="body_index">
     <!-- navbar inicia -->
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./Imagenes/GDN.png" alt=""
+          <a class="navbar-brand" href="#"
+            ><img class="navImagen" src="./Imagenes/GDN.png" alt=""
           /></a>
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="d-flex justify-content-end collapse navbar-collapse"
-            id="collapsibleNavbar"
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Secciones/nosotros.html"
-                  >Nosotros</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Secciones/valores.html">Valores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Secciones/servicios.html"
-                  >Servicios</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Secciones/contacto.html"
-                  >Contactanos</a
-                >
-              </li>
-            </ul>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./Secciones/nosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./Secciones/servicios.html"
+                    >Servicios</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./Secciones/valores.html"
+                    >Valores</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./Secciones/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -67,7 +91,21 @@
       </div>
     </main>
 
-    <footer>Gestion De Negocios - Moreno 957 Piso 8 Oficina 1</footer>
+    <footer>
+      <p>Moreno 957 Piso 8 Oficina 1</p>
+      <p id="Ciudad">Ciudad Autónoma de Buenos Aires - Argentina</p>
+      <div class="redes">
+        <a href="https://wa.me/5491160561219"> <i class="fa-brands fa-whatsapp"></i> </a>
+
+        <a href="https://www.linkedin.com/company/83557841/admin/dashboard/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

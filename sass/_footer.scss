@@ -1,0 +1,31 @@
+footer {
+    text-align: center;
+    font-size: 16px;
+    color: antiquewhite;
+    padding: 15px;
+    background-color: $color;
+    font-family: "Andika", serif;
+    font-weight: 700;
+     }
+
+footer p{
+margin-top: 0;
+margin-bottom: 2px;
+}
+
+#Ciudad {
+    font-size: 10px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+  
+.redes a:hover {
+color: rgb(63, 5, 64);
+
+}

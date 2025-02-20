@@ -1,118 +1,24 @@
-$color: rgb(61, 5, 113);
-$color2:  rgb(151, 150, 150);
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
 
-div {
-    font-size: 16px;
-    color: black;
-  }
-  /*index inicia*/
-  /*navbar inicia*/
+}
 
-  .navbar {
-    background-color: rgb(37, 2, 69);
-  }
-  
-  .navbar-brand img {
-    width: 100%;
-    max-width: 150px; 
-    height: auto;
-  }
-  
-  
-  @media (max-width: 480px) {
-    .navbar-brand img {
-      width: 80px; 
-    }
-  }
-  
 
-  @media (max-width: 768px) {
-    .navbar-brand img {
-      width: 120px; 
-    }
-  }
-  
 
-  @media (min-width: 769px) {
-    .navbar-brand img {
-      width: 150px; 
-    }
-  }
-  
-  .nav-link {
-    color: white;
-  }
-  /*navbar finaliza*/
-  
-  .main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./Imagenes/Fondo_Index.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: $color;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  }
-  
-  .img_h1 {
-    font-size: 60px;
-    margin: 0;
-  }
-  
-  .img_h2 {
-    font-size: 40px;
-    margin: 0;
-  }
-  
-  @media only screen and (min-width: 480px) {
-    .img_h1 {
-      font-size: 30px;
-    }
-    .img_h2 {
-      font-size: 20px;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .img_h1 {
-      font-size: 60px;
-    }
-    .img_h2 {
-      font-size: 40px;
-    }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .img_h1 {
-      font-size: 90px;
-    }
-    .img_h2 {
-      font-size: 50px;
-    }
-  }
+$color: rgb(31, 3, 58);
+$color2:  rgb(94, 8, 112);
+
+@import "_index.scss";
+@import "_footer.scss";
+
+
   
   /*termina index*/
   
-  h1 {
-    font-size: 100px;
-    color:$color;
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+
   
   .titulo {
     font-size: 50px;
@@ -261,12 +167,4 @@ div {
     }
   
   /*termina servicios*/
-  
-  footer {
-    text-align: center;
-    font-size: 16px;
-    color: white;
-    padding: 20px;
-    background-color: rgb(37, 2, 69);
-  }
   
