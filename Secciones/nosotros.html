@@ -1,81 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  />
-    <link rel="stylesheet" href="../estilos.css">
-    <title>GDN_Nosotros</title>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Euphoria+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../estilos.css" />
+    <title>GDN: Nosotros</title>
 </head>
-<body id="body_nosotros">
+<body class="body_nosotros">
     <!-- navbar inicia -->
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-              <img src="../Imagenes/GDN.png" alt=""
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsibleNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="d-flex justify-content-end collapse navbar-collapse"
-              id="collapsibleNavbar"
-            >
-              <ul class="navbar-nav">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img class="navImagen" src="../Imagenes/GDN.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./nosotros.html"
-                    >Nosotros</a
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >Inicio</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./valores.html">Valores</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./servicios.html"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./servicios.html"
                     >Servicios</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html"
-                    >Contactanos</a
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./valores.html"
+                    >Valores</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./contacto.html"
+                    >Contacto</a
                   >
                 </li>
               </ul>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
       <!-- navbar termina -->
 
+      <main class="main_nosotros">
     <h1 class="titulo">Sobre Nosotros</h1>
-    <main class="main_nosotros">
+    
             <p class="nosotros">Somos una empresa de BPO formada por un equipo con más de 10 años
             de experiencia, comprometidos a ofrecer un servicio excepcional a
             nuestros clientes. Nuestro equipo de trabajo, compuesto por profesionales
             altamente capacitados, se dedica a brindar soluciones eficaces en cada
             interacción.
             </br>
-            </br>
             La innovación es uno de nuestros principales pilares. Implementamos
             tecnologías de vanguardia que optimizan nuestros procesos y mejoran la
             experiencia del cliente. Gracias a sistemas avanzados de gestión y análisis
             de datos, aseguramos respuestas rápidas y precisas, maximizando la
             eficiencia.
-            </br>
             </br>
             Con años de experiencia en la industria, nuestro equipo no solo posee
             conocimientos técnicos, sino también una profunda comprensión de las
@@ -84,7 +107,21 @@
         
     </main>
 
-    <footer>Gestion De Negocios - Moreno 957 Piso 8 Oficina 1</footer>
+    <footer>
+      <p>Moreno 957 Piso 8 Oficina 1</p>
+      <p id="Ciudad">Ciudad Autónoma de Buenos Aires - Argentina</p>
+      <div class="redes">
+        <a href="https://wa.me/5491160561219"> <i class="fa-brands fa-whatsapp"></i> </a>
+
+        <a href="https://www.linkedin.com/company/83557841/admin/dashboard/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
 
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

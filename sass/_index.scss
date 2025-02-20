@@ -4,76 +4,6 @@ flex-direction: column;
 height: 100vh;
 }
 
-@media only screen and (min-width: 0px) {
- header {
-      height: 56px;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    header {
-        height: 66px;
-      }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    header {
-        height: 82px;
-      }
-  }
-
-.bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: $color !important;}
-
-.offcanvas {
-background-color: $color !important;
-}
-
-
-.navImagen {
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    width: auto;
-    -webkit-mask-image: radial-gradient(circle, rgb(7, 7, 7) 50%, rgba(240, 239, 239, 0) 100%);
-    mask-image: radial-gradient(circle, rgb(11, 11, 11) 50%, rgba(243, 241, 241, 0) 100%);
-
-}
-
-@media only screen and (min-width: 0px) {
-    .navImagen {
-      height: 30px;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .navImagen {
-        height: 40px;
-      }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .navImagen {
-        height: 56px;
-      }
-  }
-
-
-h1 {
-    font-size: 100px;
-    color:$color;
-    text-align: left;
-    font-family: "Andika", serif;
-
-  }
-
-  div {
-    font-size: 16px;
-    color: black;
-  }
 
   
   .main {
@@ -142,27 +72,4 @@ h1 {
     .img_h2 {
       font-size: 50px;
     }
-  }
-
-  a.nav-link.active {
-font-family: "Andika", serif;
-font-size: 20px;
-  }
-
- @media only screen and (min-width: 0px) {
-    .offcanvas {
-      width: 200px !important;
-    }
-  }
-  
-  @media only screen and (min-width: 768px) {
-    .offcanvas {
-        width: 250px !important;
-      }
-  }
-  
-  @media only screen and (min-width: 1024px) {
-    .offcanvas  {
-        width: 399px !important;
-      }
   }

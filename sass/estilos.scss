@@ -13,41 +13,21 @@ $color2:  rgb(94, 8, 112);
 
 @import "_index.scss";
 @import "_footer.scss";
+@import "_header.scss";
+@import "_nosotros.scss";
 
 
   
-  /*termina index*/
   
-
-  
-  .titulo {
+  /*.titulo {
     font-size: 50px;
     color: $color;
     font-weight: bold;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+  }*/
   
-  /*nosotros inicia*/
-  .nosotros {
-    text-align: justify;
-    padding: 20%;
-    font-size: 24px;
-    color: $color;
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  #body_nosotros {
-    margin: 0;
-    padding: 0;
-    background-color: $color2;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  /*nosotros termina*/
-  
+    
   /*valores inicia*/
   
   .valores {
