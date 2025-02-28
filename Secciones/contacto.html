@@ -9,54 +9,101 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Euphoria+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../estilos.css" />
     <title>GDN_Contacto</title>
   </head>
-  <body>
+  <body class="body_contacto">
     <!-- navbar inicia -->
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../Imagenes/GDN.png" alt=""
+          <a class="navbar-brand" href="../index.html"
+            ><img class="navImagen" src="../Imagenes/GDN.png" alt=""
           /></a>
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="d-flex justify-content-end collapse navbar-collapse"
-            id="collapsibleNavbar"
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./valores.html">Valores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contactanos</a>
-              </li>
-            </ul>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./nosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./valores.html"
+                    >Valores</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./servicios.html"
+                    >Servicios</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
     <!-- navbar termina -->
 
-    <h1 class="titulo">Contáctanos</h1>
-    <main>
+
+    <main class="main_contacto">
+
+
+<h1 class="titulo_contacto">Contáctanos</h1>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nombre</label>
         <input
@@ -99,21 +146,40 @@
         ></textarea>
       </div>
       <div class="d-grid gap-3">
-        <button type="button" class="btn btn-primary btn-block">Enviar</button>
+        <button type="button" class="btn btn-primary btn-block" id="enviar">Enviar</button>
       </div>
-    </br>
+   
       <iframe
+        class="mapa"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7035811999285!2d-58.37986749999999!3d-34.6116563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad12b8739f9%3A0x33cbe733a3fc010e!2sMoreno%20957%2C%20C1091%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1733234685603!5m2!1ses!2sar"
-        width="500"
-        height="400"
-        style="border: 0"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      ></iframe> 
     </main>
 
-    <footer>Gestion De Negocios - Moreno 957 Piso 8 Oficina 1</footer>
+    <footer class="foot_movil">
+      <p class="foot_Dir_movil">Moreno 957 Piso 8 Oficina 1</p>
+      <p class="foot_Ciudad_movil">
+        Ciudad Autónoma de Buenos Aires - Argentina
+      </p>
+      <div class="foot_redes_movil">
+        <a href="https://wa.me/5491160561219" id="What">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/83557841/admin/dashboard/"
+          id="Linkedin"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.instagram.com/" id="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
