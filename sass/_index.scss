@@ -1,3 +1,4 @@
+/*inicia Header*/
 .body_index {
   display: flex;
   flex-direction: column;
@@ -37,9 +38,7 @@
   text-align: center;
   text-shadow: 5px 5px 10px rgba(252, 252, 252, 0.8);
   animation: pulso 1.5s infinite alternate ease-in-out;
-
 }
-
 
 .img_h2 {
   font-size: 40px;
@@ -49,7 +48,6 @@
   text-shadow: 5px 5px 10px rgba(31, 3, 58, 0.8);
   animation: pulso 1.5s infinite alternate ease-in-out;
 }
-
 
 @media only screen and (min-width: 0px) {
   .img_h1 {
@@ -88,3 +86,4 @@
     opacity: 0.8;
   }
 }
+/*Termina Header*/

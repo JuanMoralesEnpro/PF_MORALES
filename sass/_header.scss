@@ -1,3 +1,4 @@
+/*inicia header*/
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: $color !important;
@@ -30,17 +31,35 @@
   .navImagen {
     height: 30px;
   }
+  .offcanvas {
+    width: 200px !important;
+  }
+  header {
+    height: 56px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .navImagen {
     height: 40px;
   }
+  .offcanvas {
+    width: 250px !important;
+  }
+  header {
+    height: 66px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .navImagen {
     height: 56px;
+  }
+  .offcanvas {
+    width: 399px !important;
+  }
+  header {
+    height: 82px;
   }
 }
 
@@ -48,39 +67,4 @@ a.nav-link.active {
   font-family: "Andika", serif;
   font-size: 20px;
 }
-
-@media only screen and (min-width: 0px) {
-  .offcanvas {
-    width: 200px !important;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .offcanvas {
-    width: 250px !important;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .offcanvas {
-    width: 399px !important;
-  }
-}
-
-@media only screen and (min-width: 0px) {
-  header {
-    height: 56px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  header {
-    height: 66px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  header {
-    height: 82px;
-  }
-}
+/*Termina header*/

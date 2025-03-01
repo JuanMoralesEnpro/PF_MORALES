@@ -5,6 +5,7 @@
   text-decoration: none;
 }
 
+/*inicia Header*/
 .body_index {
   display: flex;
   flex-direction: column;
@@ -89,6 +90,8 @@
     opacity: 0.8;
   }
 }
+/*Termina Header*/
+/*inicia Nosotros*/
 .body_nosotros {
   display: flex;
   flex-direction: column;
@@ -211,6 +214,7 @@
     grid-template-rows: 20% 80%;
   }
 }
+/*Termina Nosotros*/
 /*inicia servicios*/
 body {
   display: flex;
@@ -274,45 +278,11 @@ body {
 
 .servicio i {
   font-size: 2rem;
-  color: #007bff;
   color: white;
 }
 
-/*  .servicios {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-
-}
-
-.servicios h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.servicios-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.servicio {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.servicio:hover {
-    transform: translateY(-5px);
-}
-
-.servicio i {
-    font-size: 3rem;
-    color: #007bff;
-}*/
+/*Termina servicios*/
+/*inicia contacto*/
 .body_contacto {
   display: flex;
   flex-direction: column;
@@ -408,6 +378,8 @@ body {
     margin: 0 0 0 0;
   }
 }
+/*Termina contacto*/
+/*inicia valores*/
 .body_valores {
   display: flex;
   flex-direction: column;
@@ -512,7 +484,7 @@ body {
   .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
   .caption-box {
     margin: 70px 0 50px 0;
@@ -528,13 +500,27 @@ body {
     position: relative;
     width: 90%;
     max-width: 1200px;
-    max-height: 450px;
+    max-height: 630px;
     overflow: hidden;
     margin: auto;
+  }
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .carousel-item {
+    width: 100%;
+    height: 100%;
   }
   .caption-box {
     margin: 20px 0 50px 0;
     font-size: 48px;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 @media only screen and (min-width: 1900px) {
@@ -545,13 +531,19 @@ body {
   }
   #carouselExampleIndicators {
     position: relative;
-    width: 98%;
+    width: 90%;
     max-width: 1800px;
-    max-height: 600px;
+    max-height: 650px;
     overflow: hidden;
     margin: auto;
   }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
+/*Termina valores*/
 /*footer estatico inicia*/
 .foot_estatico {
   text-align: center;
@@ -607,35 +599,6 @@ body {
   margin: 0 0 0 0;
 }
 
-/*#What {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  height: fit-content;
-  margin: 0;
-  padding: 5px;
-}
-
-#Linkedin {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  height: fit-content;
-  margin: 0;
-  padding: 0;
-}
-
-#Instagram {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  height: fit-content;
-  margin: 0;
-  padding: 0;
-}*/
 .foot_redes_movil a {
   text-decoration: none;
   color: antiquewhite;
@@ -702,6 +665,8 @@ body {
   overflow: hidden;
 }
 
+/*Finaliza footer movil*/
+/*inicia header*/
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgb(31, 3, 58) !important;
@@ -726,15 +691,33 @@ body {
   .navImagen {
     height: 30px;
   }
+  .offcanvas {
+    width: 200px !important;
+  }
+  header {
+    height: 56px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .navImagen {
     height: 40px;
   }
+  .offcanvas {
+    width: 250px !important;
+  }
+  header {
+    height: 66px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .navImagen {
     height: 56px;
+  }
+  .offcanvas {
+    width: 399px !important;
+  }
+  header {
+    height: 82px;
   }
 }
 a.nav-link.active {
@@ -742,35 +725,6 @@ a.nav-link.active {
   font-size: 20px;
 }
 
-@media only screen and (min-width: 0px) {
-  .offcanvas {
-    width: 200px !important;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .offcanvas {
-    width: 250px !important;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .offcanvas {
-    width: 399px !important;
-  }
-}
-@media only screen and (min-width: 0px) {
-  header {
-    height: 56px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  header {
-    height: 66px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header {
-    height: 82px;
-  }
-}
+/*Termina header*/
 
 /*# sourceMappingURL=estilos.css.map */

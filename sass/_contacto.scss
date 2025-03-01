@@ -1,123 +1,103 @@
+/*inicia contacto*/
 .body_contacto {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .main_contacto {
-    display: grid;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    background-image: url("./Imagenes/Fondo_contacto.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.2);
-    background-blend-mode: multiply;
-    font-family: "Andika", serif;
+  display: grid;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Imagenes/Fondo_contacto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  font-family: "Andika", serif;
+}
 
-  } 
+.titulo_contacto {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: -2px -2px 0 $color, 2px -2px 0 $color, -2px 2px 0 $color,
+    2px 2px 0 $color;
+}
 
-  .titulo_contacto {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    text-shadow: 
-    -2px -2px 0 $color,  
-     2px -2px 0 $color,
-    -2px  2px 0 $color,
-     2px  2px 0 $color;
-  }
+.mb-3 {
+  font-size: 16px;
+  margin: 0 0 0 0 !important;
+  padding: 0;
+}
 
-  .mb-3 {
-    font-size: 16px;
-    margin: 0 0 0 0 !important;
-    padding: 0;
-  }
+.form-label {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 $color3, 1px -1px 0 $color3, -1px 1px 0 $color3,
+    1px 1px 0 $color3;
+  margin: 0 0 0 0;
+}
 
-  .form-label {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    text-shadow:     
-   -1px -1px 0 $color3,  
-    1px -1px 0 $color3,
-   -1px  1px 0 $color3,
-    1px  1px 0 $color3;
-    margin: 0 0 0 0;
-  }
-
-
-  #enviar {
-    background-color: $color3;
-    color: white;
-    text-shadow:     
-    -1px -1px 0 $color,  
-     1px -1px 0 $color,
-    -1px  1px 0 $color,
-     1px  1px 0 $color;
-    font-weight: bolder;
-    font-size: 20px;
-    border: 3px solid $color;
-  }
+#enviar {
+  background-color: $color3;
+  color: white;
+  text-shadow: -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color,
+    1px 1px 0 $color;
+  font-weight: bolder;
+  font-size: 20px;
+  border: 3px solid $color;
+}
 
 #enviar:hover {
-background-color: $color;
-
+  background-color: $color;
 }
 
 .form-control:hover {
-    background-color: rgba($color3,0.2);
-    
-   }
+  background-color: rgba($color3, 0.2);
+}
 
+.mapa {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
 
-   
+@media only screen and (min-width: 375px) {
   .mapa {
-    width: 100%;
-    aspect-ratio: 16 / 9; 
-    border: 0;
+    width: 350px;
   }
+}
 
-
-  @media only screen and (min-width: 375px) {
-    .mapa {
-      width: 350px;
-    }
-  
+@media only screen and (min-width: 768px) {
+  .mapa {
+    width: 490px;
   }
-
-
-  
-  @media only screen and (min-width: 768px) {
-    .mapa {
-      width: 490px;
-    }
-    .titulo_contacto { 
-       margin: 0 0 0 0; 
-    }
+  .titulo_contacto {
+    margin: 0 0 0 0;
   }
-  
-  
+}
 
-  @media only screen and (min-width: 1024px) {
-    .mapa {
-        width: 550px;
-        height: 220px;
-      }
-      .titulo_contacto { 
-         margin: 0 0 0 0; 
-      }
-    }
-  
-  @media only screen and (min-width: 1800px) {
-    .mapa {
-        width: 550px;
-        height: 350px;
-      }
-      .titulo_contacto { 
-         margin: 0 0 0 0; 
-      }
-    }
-  
+@media only screen and (min-width: 1024px) {
+  .mapa {
+    width: 550px;
+    height: 220px;
+  }
+  .titulo_contacto {
+    margin: 0 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .mapa {
+    width: 550px;
+    height: 350px;
+  }
+  .titulo_contacto {
+    margin: 0 0 0 0;
+  }
+}
+/*Termina contacto*/
