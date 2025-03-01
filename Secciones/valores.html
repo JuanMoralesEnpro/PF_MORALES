@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,65 +9,161 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Euphoria+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../estilos.css" />
     <title>GDN_Valores</title>
   </head>
-  <body>
+  <body class="body_valores">
     <!-- navbar inicia -->
     <header>
-      <nav class="navbar navbar-expand-sm navbar-dark">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../Imagenes/GDN.png" alt=""
+          <a class="navbar-brand" href="../index.html"
+            ><img class="navImagen" src="../Imagenes/GDN.png" alt=""
           /></a>
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="d-flex justify-content-end collapse navbar-collapse"
-            id="collapsibleNavbar"
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./valores.html">Valores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contactanos</a>
-              </li>
-            </ul>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./nosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./valores.html"
+                    >Valores</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./servicios.html"
+                    >Servicios</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
     <!-- navbar termina -->
+<main class="main_valores">
+  <div class="main-contenido">
+  <h1 class="titulo_valores">Nuestros Valores</h1>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Imagenes/Slide_1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <div class="caption-box caption-top">Trabajo en Equipo</div>
+          <div class="caption-box caption-bottom">Respeto</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../Imagenes/Slide_2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <div class="caption-box caption-top">Flexibilidad</div>
+          <div class="caption-box caption-bottom">Innovación</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../Imagenes/Slide_3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption">
+          <div class="caption-box caption-top">Calidad</div>
+          <div class="caption-box caption-bottom">Competitividad</div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+</main>
 
-    <h1 class="titulo">Valores</h1>
+    <footer class="foot_movil">
+      <p class="foot_Dir_movil">Moreno 957 Piso 8 Oficina 1</p>
+      <p class="foot_Ciudad_movil">
+        Ciudad Autónoma de Buenos Aires - Argentina
+      </p>
+      <div class="foot_redes_movil">
+        <a href="https://wa.me/5491160561219" id="What">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
 
-    <section class="valores">
-      <div class="circulo" id="trabajoEnEquipo">Trabajo en Equipo</div>
-      <div class="circulo" id="flexibilidad">Flexibilidad</div>
-      <div class="circulo" id="transparencia">Transparencia</div>
-      <div class="circulo" id="respeto">Respeto</div>
-      <div class="circulo" id="humildad">Humildad</div>
-      <div class="circulo" id="innovacion">Innovación</div>
-      <div class="circulo" id="ambicion">Ambición</div>
-    </section>
+        <a
+          href="https://www.linkedin.com/company/83557841/admin/dashboard/"
+          id="Linkedin"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
 
-    <footer>Gestion De Negocios - Moreno 957 Piso 8 Oficina 1</footer>
+        <a href="https://www.instagram.com/" id="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
